@@ -1,4 +1,4 @@
-#include"main.h"  
+#include "main.h"
 /**
 *main-function prints text as output
 i*
@@ -6,10 +6,17 @@ i*
 */
 int main(void)
 {
-	char	*main;
-	for	(main =	"Main\n"; *main	!= '\0'; ++main);
-{
-	_putchar(*main);
-}
+	_putchar('_');
+	_putchar('p');
+	_putchar('u');
+	_putchar('u');
+	_putchar('t');
+	_putchar('c');
+	_putchar('h');
+	_putchar('a');
+	_putchar('r');
+	_putchar('\n');
+
 	return (0);
 }
+
