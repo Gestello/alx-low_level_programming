@@ -5,6 +5,7 @@
  * Return: 10 times of the number from 0-14
  */
 void more_numbers(void);
+
 {
 	int a, b;
 
@@ -14,10 +15,10 @@ void more_numbers(void);
 		{
 			if (b >= 10)
 			{
-				putchar((b / 10) + 48;)
-				putchar(b % 10) + 48;)
+				_putchar((b / 10) + 48);
+				_putchar(b % 10) + 48);
 			}
-			putchar('\n');
+			_putchar('\n');
 		}
 	}
 }
