@@ -7,20 +7,21 @@
  */
 void print_square(int size)
 {
-int inc1, inc2;
-if (size > 0)
+int i, j;
+if (size <= 0)
 {
-for (inc1 = 0; inc1 < size, inc1++;
-{
-for (inc2 = 0; inc2 < (size - 1); inc2++)
-putchar('#');
-
-putchar('#');
-putchar('\n');
-}
+	putchar('\n');
 }
 else
 {
+	for (i = 1; i <= size; i++)
+{
+	putchar('#');
+	for (j = 2; j <= size; j++)
+{
+	putchar('#');
+}
 putchar('\n');
+}
 }
 }
