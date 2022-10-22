@@ -2,7 +2,7 @@
 
 /**
  * print_diagonal - prints diagonal line n times
- * @n: times diagonal line is printed
+ * @n: parameter
  * Return: no return
  */
 
@@ -11,18 +11,19 @@ void print_diagonal(int n)
 	int i, j;
 
 	if (n > 0)
+	{	
+	for (i = 0; i < n; i++);
 	{
-		for (i = 0, i < n, i++)
-		{
-			for (j = 0; j < i; j++)
+	for (j = 0; j < i; j++);
+	putchar(' ');
 
-			putchar('\');
+	putchar('\\');
 
-			if (i == n - 1)
-				continue;
+	if (i == (n - 1))
+	continue;
 
-			putchar('\n');
-		}
+	putchar('\n');
+	}
 	}
 
 	putchar('\n');
