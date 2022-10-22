@@ -1,1 +1,1 @@
-main.c
+10-print_triangle.c
