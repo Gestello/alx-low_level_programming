@@ -2,21 +2,21 @@
 
 /**
  * reverse_array - reverse thecontent of an array of of integers
- * @: the array of integers to be reversed
+ * @a: the array of integers to be reversed
  * @n: the number of element in the array
  */
 
 void reverse_array(int *a, int n)
 {
-	int i, j, temp;
+	int i, temp;
 
-	for (i = 0; i < n - 1; i++)
+	temp = 0;
+	n = n - 1;
+
+	for (i = 0; i <= n; n--, i++)
 	{
-		for (j = i + 1; j > 0; j--)
-		{
-			temp = *(a + j);
-			*(a + j) = *(a + (j - 1));
-			*(a + (j - 1)) = temp;
-		}
+		temp = a[n];
+		a[n] = a[i];
+		a[i] = temp;
 	}
 }
