@@ -1,1 +1,1 @@
-9-fizz_buzz.c
+100-prime_factor.c
