@@ -1,17 +1,18 @@
 #include <stdio.h>
-#include <time.h>
-#include <stdlib.h>
+
 /**
-*main-program entry point
-*return:0
-*/	 
-int main(void)	
+ * main - print alphabet
+ * return: 0
+ */
+int main(void)
 {
-char w;	
-for (w = 'a'; w <= 'Z'; w++)	
-{
-putchar(w);
-}
-putchar('\n');
-return (0);
+	char c = 'a';
+
+	while (c <= 'z')
+	{
+		putchar(c);
+		c++;
+	}
+	putchar('\n');
+	return (0);
 }
