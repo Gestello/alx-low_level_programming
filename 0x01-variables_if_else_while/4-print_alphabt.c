@@ -1,19 +1,22 @@
 #include <stdio.h>
-#include <stdlib.h>
-#include <time.h>
+
 /**
-*main-program entry point.
-*Return:O 
-*/
+ * main - print alphabet in lowercase and exclude q and e
+ * Return: 0
+ */
+
 int main(void)
 {
-char i;
-for	(i	=	'a'; i	<=	'Z'; i++)
-{
-if(i	==	'e'	||	i	==	'q')	continue;
-putchar(i);
-}
-putchar('\n');
-return (0);
+
+	char ch = 'a';
+
+	while (ch <= 'z')
+	{
+		if (ch != 'e' && ch != 'q')
+				putchar(ch);
+		ch++;
+	}
+	putchar('\n');
+	return (0);
 }
 
