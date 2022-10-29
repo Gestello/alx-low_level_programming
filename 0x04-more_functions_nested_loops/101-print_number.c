@@ -13,8 +13,7 @@ void print_number(int n)
 	{
 		n1 = n * -1;
 		putchar('-');
-	}
-	else
+	} else
 	{
 		n1 = n;
 	}
