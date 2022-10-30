@@ -1,18 +1,19 @@
 #include <stdio.h>
-#include <stdlib.h>
-#include <time.h>
+
 /**
-*main-program entry point
-*Return:0
-*/
+ * main - prints all numbers of base 16 in lowercase
+ * Return: 0 means successful
+ */
+
 int main(void)
 {
-int i;
-char hexvalues[]	=	 "0123456789abcdef";
-for (i = 0; i < 16; i++)
-{
-putchar (hexvalues[i]);
-putchar('\n');
-}
-return (0);
+	int i;
+	char ch;
+
+	for (i = 48; i < 58; i++)
+		putchar(i);
+	for (ch = 'a'; ch <= 'f'; ch++)
+		putchar(ch);
+	putchar('\n');
+	return (0);
 }
