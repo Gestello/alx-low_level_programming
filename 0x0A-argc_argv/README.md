@@ -1,1 +1,1 @@
-3-mul.c
+main.h
