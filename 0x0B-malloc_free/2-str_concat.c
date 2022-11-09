@@ -34,10 +34,10 @@ char *str_concat(char *s1, char *s2)
 
 	/*if the array is empty*/
 	if (s1 == NULL)
-		s1 = " ";
+		s1 = "";
 
 	if (s2 == NULL)
-		s2 = " ";
+		s2 = "";
 
 	/*count size total*/
 	size = (_strlen(s1) + _strlen(s2) + 1);
