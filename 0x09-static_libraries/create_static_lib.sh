@@ -1,4 +1,7 @@
-#include "main.h"
-#include <stdio.h>
+#!/bin/bash
 
-liball.a
+gcc -c *.c
+
+at -rc liball.a *.o
+
+ranlib liball.a
