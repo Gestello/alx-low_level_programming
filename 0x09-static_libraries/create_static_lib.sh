@@ -1,2 +1,5 @@
+#include "main.h"
+
 *.c
-*.o
+
+ar -rc liball.a *.o
