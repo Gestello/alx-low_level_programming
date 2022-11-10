@@ -1,5 +1,5 @@
-#include "main.h"
+#!/bin/bash
 
 *.c
 
-ar -rc liball.a *.o
+liball.a *.o
