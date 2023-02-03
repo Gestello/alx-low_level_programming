@@ -1,25 +1,12 @@
-loc)  4.42 KB
-
-
-
 #include "hash_tables.h"
 
-
-
 /**
-
  * shash_table_create - creates a shash table with a given size
-
- *
-
  * @size: size of the shash table
-
  * Return: the created shash table, or NULL if function fails
-
  */
 
 shash_table_t *shash_table_create(unsigned long int size)
-
 {
 
 	shash_table_t *table;
@@ -69,19 +56,11 @@ shash_table_t *shash_table_create(unsigned long int size)
 
 
 /**
-
  * add_n_shash - adds a node at the beginning of a shash at a given index
-
- *
-
  * @h: head of the shash linked list
-
  * @key: key of the shash
-
  * @value: value to store
-
  * Return: created node
-
  */
 
 shash_node_t *add_n_shash(shash_node_t **h, const char *key, const char *value)
@@ -90,11 +69,7 @@ shash_node_t *add_n_shash(shash_node_t **h, const char *key, const char *value)
 
 	shash_node_t *tmp;
 
-
-
 	tmp = *h;
-
-
 
 	while (tmp != NULL)
 
@@ -144,20 +119,11 @@ shash_node_t *add_n_shash(shash_node_t **h, const char *key, const char *value)
 
 }
 
-
-
 /**
-
  * add_i_shash - adds a node on the DLL of the shash table
-
- *
-
  * @ht: pointer to the table
-
  * @new: new node to add
-
  * Return: no return
-
  */
 
 void add_i_shash(shash_table_t *ht, shash_node_t *new)
@@ -241,25 +207,14 @@ void add_i_shash(shash_table_t *ht, shash_node_t *new)
 
 
 	ht->stail = new;
-
 }
 
-
-
 /**
-
  * shash_table_set - adds a hash (key, value) to a given shash table
-
- *
-
  * @ht: pointer to the shash table
-
  * @key: key of the shash
-
  * @value: value to store
-
  * Return: 1 if successes, 0 if fails
-
  */
 
 int shash_table_set(shash_table_t *ht, const char *key, const char *value)
@@ -309,17 +264,10 @@ int shash_table_set(shash_table_t *ht, const char *key, const char *value)
 
 
 /**
-
  * shash_table_get - retrieves a value associated with a key
-
- *
-
  * @ht: pointer to the shash table
-
  * @key: key of the shash
-
  * Return: value of the shash.
-
  */
 
 char *shash_table_get(const shash_table_t *ht, const char *key)
